@@ -11183,6 +11183,26 @@ label {
   min-height: 32px;
 }
 
+.title-small-margin {
+    margin-top: 30px;
+    margin-bottom: 0px;
+    min-height: 32px;
+    font-weight: 700;
+    font-family: "Roboto Slab", "Times New Roman", serif;
+    color: #3C4858;
+    text-decoration: none;
+}
+
+.title-sub-title {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    min-height: 32px;
+    font-weight: 500;
+    font-family: "Roboto Slab", "Times New Roman", serif;
+    color: #3C4858;
+    text-decoration: none;
+}
+
 #map {
   position: relative;
   z-index: 2;
