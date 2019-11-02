@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>Poverty in Champagin County</title>
+  <title>DrawIt</title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
@@ -29,8 +29,8 @@
             <div class="row">
                 <div class="col-md-8 ml-auto mr-auto">
                     <div class="brand">
-                        <h1>Poverty Data Mining With a Random Forest Regressor</h1>
-                        <h3>Identifying the problem is the first step</h3>
+                        <h1>DrawIt</h1>
+                        <h3>Have a computer draw something! Type in an object and see it draw</h3>
                     </div>
                 </div>
             </div>
@@ -110,120 +110,6 @@
                 <div class="tim-typo">
                     <h3>We found that the highest-weighted feature is average household size, likely because the larger the family the more difficult it is to feed everyone. Also, the percent of people with an associate’s degree or higher is really important for determining if an area will have a higher percentage in poverty.</h3>
                 </div>
-                <br><br>
-
-                <!-- Graph -->
-                <div class="container">
-                    <canvas id="mainChart"></canvas>
-                    <canvas id="chart2"></canvas>
-                </div>
-
-                <script>
-          var mainChart = document.getElementById('mainChart').getContext('2d');
-
-          var barChart = new Chart(mainChart, {
-            type: 'bar',
-            data: {
-              labels: ["Average Household Size", "Speaking a Language Other than English at Home", "Mean Travel Time to Work (Minutes)", "Assessed population", "Employment/Population Ratio (%)", "Owner-Occupied", "Renter-Occupied", "High school graduate or equivalency", "Associate's degree", "Bachelor's degree", "Graduate or professional degree"],
-              datasets: [{
-                label: 'Percent',
-                data: [17, 11, 16, 3, 8, 4, 16, 7, 10, 5, 3],
-                backgroundColor: [
-                  'rgba(73, 247, 102, 0.6)',
-                  'rgba(206, 57, 132, 0.6)',
-                  'rgba(11, 142, 116, 0.6)',
-                  'rgba(255, 99, 132, 0.6)',
-                  'rgba(210, 30, 21, 0.6)',
-                  'rgba(140, 40, 200, 0.6)',
-                  'rgba(195, 150, 75, 0.6)',
-                  'rgba(123, 45, 50, 0.6)',
-                  'rgba(153, 120, 120, 0.6)',
-                  'rgba(155, 199, 32, 0.6)',
-                  'rgba(25, 159, 121, 0.6)'
-                ],
-                hoverBorderWidth: 2,
-                hoverBorderColor: 'black'
-              }]
-            },
-            options: {
-              title: {
-                display: true,
-                text: 'Importance of Different Features on Poverty Rate (Champaign County Data)',
-                fontSize: 25
-              },
-              scales: {
-                yAxes: [{
-                  display: true,
-                  ticks: {beginAtZero: true},
-                  scaleLabel: {
-                    display: true,
-                    labelString: 'Importance'
-                  }
-                }],
-                xAxes: [{
-                  display: true,
-                  scaleLabel: {
-                    display: true,
-                    labelString: 'Feature'
-                  }
-                }]
-              },
-              legend: {display: false}
-            }
-          });
-
-          var chart2 = document.getElementById('chart2').getContext('2d');
-
-          var barChart = new Chart(chart2, {
-            type: 'bar',
-            data: {
-              labels: ["Total Population", "Average Family Size", "LOTE", "Mean Travel Time to Work", "Hispanic or Latino", "High School Enrollment", "College or Graduate School Enrollment", "Median Mortgage Status of Owners with Mortgage"],
-              datasets: [{
-                label: 'Percent',
-                data: [11, 18, 10, 13, 11, 9, 8, 20],
-                backgroundColor: [
-                  'rgba(73, 166, 247, 0.6)',
-                  'rgba(73, 247, 102, 0.6)',
-                  'rgba(206, 57, 132, 0.6)',
-                  'rgba(11, 142, 116, 0.6)',
-                  'rgba(102, 51, 0, 0.6)',
-                  'rgba(53, 43, 234, 0.6)',
-                  'rgba(128, 122, 210, 0.6)',
-                  'rgba(232, 44, 44, 0.6)'
-                ],
-                hoverBorderWidth: 2,
-                hoverBorderColor: 'black'
-              }]
-            },
-            options: {
-              title: {
-                display: true,
-                text: 'Importance of Different Features on Poverty Rate (US Data)',
-                fontSize: 25
-              },
-              scales: {
-                yAxes: [{
-                  display: true,
-                  ticks: {beginAtZero: true},
-                  scaleLabel: {
-                    display: true,
-                    labelString: 'Importance'
-                  }
-                }],
-                xAxes: [{
-                  display: true,
-                  scaleLabel: {
-                    display: true,
-                    labelString: 'Feature'
-                  }
-                }]
-              },
-              legend: {display: false}
-            }
-          });
-                </script>
-
-                <br><br>
             </div>
 
             <div class="progress progress-line-primary">
@@ -242,17 +128,11 @@
                 </div>
 
                 <div class="row">
-                    <iframe src="https://www.google.com/maps/d/embed?mid=1pkK3tZXdI00Wo3gKupKjkeXeWHxnpSCy" width="1280" height="960"></iframe>
-                </div>
-                <div class="row">
                     <div class="tim-typo">
                         <h4>Above you will find all local food pantries in the Champaign-Urbana area. Included are the locations, hours, phone numbers, and websites of all locations.<h4>
                     </div>
                 </div>
 
-                <div class="row">
-                    <iframe src="https://www.google.com/maps/d/embed?mid=11xMCZq9ujtYJhViMqZfXOrIAhbpKzeyW" width="1280" height="960"></iframe>
-                </div>
                 <div class="row">
                     <div class="tim-typo">
                         <h4>Above is a map showing locations in the Champaign-Urbana area that can help those that speak LOTE.<h4>
@@ -280,10 +160,6 @@
                         <input type="file" name="fileToUpload" id="fileToUpload" accept=".csv">
                         <input class="btn btn-primary" type="submit" value="Upload CSV">
                     </form>
-
-                    <div class="row">
-                        <h4>Use <a href="example.csv">this</a> example CSV file to help you get started </h4>
-                    </div>
                 </div>
             </div>
         </div>
@@ -291,7 +167,7 @@
         <div class="section section-download" id="downloadSection">
             <div class="container">
                 <div class="sharing-area text-center">
-                    <a id="github" href="https://github.com/timot3/PYGHACK" target="_blank" class="btn btn-raised btn-github">
+                    <a id="github" href="https://github.com/timot3/VandyHacks" target="_blank" class="btn btn-raised btn-github">
                         <i class="fa fa-github"></i> Find us on GitHub
                     </a>
                 </div>
@@ -304,7 +180,7 @@
                 <ul></ul>
             </nav>
             <div class="copyright float-right">
-                &copy; PYGHACK 2019 - Hassan Farooq, Rauf Makharov, Timothy Vitkin, Justin Wang, AJ Wisniewski
+                &copy; DrawIt 2019 - William Eustis, Hassan Farooq, Timothy Vitkin, AJ Wisniewski
             </div>
         </div>
     </footer>
