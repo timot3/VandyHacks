@@ -30,7 +30,7 @@
                 <div class="col-md-8 ml-auto mr-auto">
                     <div class="brand">
                         <h1>DrawIt</h1>
-                        <h3>Have a computer draw something! Type in an object and see it draw</h3>
+                        <h3>Teaching a computer to doodle through GANs</h3>
                     </div>
                 </div>
             </div>
@@ -42,13 +42,11 @@
             <div id="typography" class="cd-section">
                 <br><br><br>
                 <div class="title">
-                  <center><h2>See it Draw</h2></center>
+                    <center><h2>Type in a Word Below</h2></center>
                 </div>
 
                 <center>
-                  <p>Type in a word below</p>
-
-                  <script>
+                    <script>
                     function validateForm() {
                       var x = document.forms["myForm"]["myCountry"].value;
                       var countries = ["alarm clock", "apple", "coffee cup", "eyeglasses", "fish", "flower", "leaf", "pig", "smiley face", "mona lisa"];
@@ -58,16 +56,18 @@
                         return false;
                       }
                     }
-                  </script>
+                    </script>
 
-                  <form name = "myForm" autocomplete="off" action="run_script.php" onsubmit="return validateForm()" method="get">
-                      <div class="autocomplete" style="width:300px;">
-                          <input id="myInput" type="text" name="myCountry" placeholder="ex. apple">
-                      </div>
-                      <input type="submit">
-                  </form>
+                    <form name="myForm" autocomplete="off" action="run_script.php" onsubmit="return validateForm()" method="get">
+                        <div class="autocomplete" style="width:300px;">
+                            <input id="myInput" type="text" name="myCountry" placeholder="ex. apple">
+                        </div>
+                        <input type="submit">
+                    </form>
                 </center>
             </div>
+
+            <br><br><br>
 
             <!-- Seperator -->
             <div class="progress progress-line-primary">

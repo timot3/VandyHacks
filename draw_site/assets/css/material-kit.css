@@ -11198,6 +11198,20 @@ label {
   width: 100%;
 }
 
+.QA-Header {
+    padding-left: 10%;
+    margin-bottom: 5x;
+    position: relative;
+    width: 100%;
+}
+
+.QA-Answer {
+    padding-left: 15%;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+
 .tim-typo .tim-note {
   bottom: 5px;
   color: #c0c1c2;
