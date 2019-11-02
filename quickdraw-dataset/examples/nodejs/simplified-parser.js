@@ -40,7 +40,7 @@ function parseSimplifiedDrawings(fileName, callback) {
     });
 }
 
-parseSimplifiedDrawings("data/face-simple.ndjson", function(err, drawings) {
+parseSimplifiedDrawings("data/aircraft carrier.ndjson", function(err, drawings) {
   if(err) return console.error(err);
   drawings.forEach(function(d) {
     // Do something with the drawing
