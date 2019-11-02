@@ -96,7 +96,6 @@
 }
 
 /*An array containing all the country names in the world:*/
-var countries = ["alarm clock", "apple", "coffee cup", "eyeglasses", "fish", "flower", "leaf", "pig", "smiley face", "mona lisa"];
 // var countries = ["aircraft carrier",
 //                   "airplane",
 //                   "alarm clock",
@@ -443,5 +442,8 @@ var countries = ["alarm clock", "apple", "coffee cup", "eyeglasses", "fish", "fl
 //                   "zebra",
 //                   "zigzag"]
 
+var items = ["alarm clock", "apple", "coffee cup", "eyeglasses", "fish", "flower", "leaf", "pig", "smiley face", "mona lisa"];
+
+
 /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
-autocomplete(document.getElementById("myInput"), countries);
+autocomplete(document.getElementById("myInput"), items);

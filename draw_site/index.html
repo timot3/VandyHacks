@@ -24,6 +24,7 @@
             </div>
         </div>
     </nav>
+
     <div class="page-header header-filter clear-filter grey-filter" data-parallax="true" style="background-image: url('assets/bkg.jpg');">
         <div class="container">
             <div class="row">
@@ -51,10 +52,10 @@
                   <script>
                     function validateForm() {
                       var x = document.forms["myForm"]["myCountry"].value;
-                      var countries = ["alarm clock", "apple", "coffee cup", "eyeglasses", "fish", "flower", "leaf", "pig", "smiley face", "mona lisa"];
+                      var items = ["alarm clock", "apple", "coffee cup", "eyeglasses", "fish", "flower", "leaf", "pig", "smiley face", "mona lisa"];
 
-                      if (!countries.includes(x)) {
-                        alert("Please select a valid option");
+                      if (!items.includes(x)) {
+                        alert("Please input a valid items");
                         return false;
                       }
                     }
