@@ -56,9 +56,22 @@
                             Due to time constraints, we were unable to train our model on all of the chosen categories. However, these were some of the
                             results we obtained from our model. Our results do not look very similar to the categories due to
                             <a id="medium" href="https://medium.com/@jonathan_hui/gan-why-it-is-so-hard-to-train-generative-advisory-networks-819a86b3750b" target="_blank" style="color: cornflowerblue">
-                                mode collapse</a>. In short, our model is outputting a limited range of results since our discriminator is not enforcing more diversity in the generator,
-                            and as a result, the generator is collapsing to a single point. 
+                                mode collapse
+                            </a>. In short, our model is outputting a limited range of results since our discriminator is not enforcing more
+                            diversity in the generator, and as a result, the generator is collapsing to a single point.
                         </h3>
+                        <br /><br />
+                        <h3>
+                            This ended up being our "alarm clock" output.
+                        </h3>
+                        <img src="assets/examples/alarmclock.gif" title="Alarm Clock">
+                        <br /><br />
+                        <h3>
+                            This is the latent space of our generator, showing the different points it is generating for the discriminator to train on. The lack of diversity
+                            in our generator is why our model failed to produce meaningful results, which is why all of the graphs look identical.
+                        </h3>
+                        <br /><br />
+                        <img src="assets/examples/latentspace.png" title="Latent Space of Generator">
                     </div>
                 </div>
                 <br><br>
