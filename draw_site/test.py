@@ -1,3 +1,4 @@
-import sys
-
-print("TEST " + str(sys.argv[1]))
+from PIL import Image
+img = Image.open('output.jpg')
+img.show()
+img = img.save('files/auwef.jpg')
