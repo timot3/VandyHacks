@@ -58,12 +58,13 @@
                     <div class="QA-Answer">
                         <h3>
                             We created a website to allow users to easily interact with our Generative Adversarial Network (GAN) in order to create
-                            computer-generated doodles. We achieved this by using
-                            <a id="github" href="https://github.com/googlecreativelab/quickdraw-dataset" target="_blank" style="color: cornflowerblue">
+                            computer-generated doodles. We achieved this by creating a database of user-drawn doodles from
+                            <a id="github" href="https://quickdraw.withgoogle.com/data" target="_blank" style="color: cornflowerblue">
                                 Google's Quick, Draw! dataset
-                            </a> to train our GAN with.
+                            </a> and traning a GAN on our chosen topics. When you select a category on our website, our model generates its own image based on the user
+                            data and displays it on our website.
                             <br /><br />
-                            Before VandyHacks, we thought of hackathons as a place to practice our technical programming skills and try out something new like Machine
+                            Before VandyHacks, we thought of hackathons as a place to practice our technical programming skills and explore new topics like Machine
                             Learning (ML). When considering the art theme of VandyHacks, we wanted to once again do something with ML to further our knowledge in the field,
                             but this time with a more <i>creative</i> aspect.
                         </h3>
@@ -90,7 +91,7 @@
                         </h2>
                     </div>
                     <div class="QA-Answer">
-                        <h3>We used a mixture of Python, Flask, HTML, CSS, JavaScript, and Google Cloud for training and hosting.</h3>
+                        <h3>We used a mixture of Python, Flask, HTML, CSS, PHP, JavaScript, and Google Cloud for training and hosting.</h3>
                     </div>
 
                     <div class="QA-Header">
@@ -100,16 +101,16 @@
                     </div>
                     <div class="QA-Answer">
                         <h3>
-                            One of our main concerns was mode collapse. This may occur when the generator generates a limited diversity of samples regardless of the
+                            One of our main concerns was
+                            <a id="medium" href="https://medium.com/@jonathan_hui/gan-why-it-is-so-hard-to-train-generative-advisory-networks-819a86b3750b" target="_blank" style="color: cornflowerblue">
+                                mode collapse</a>.
+
+                            This may occur when the generator generates a limited diversity of samples regardless of the
                             discriminator's feedback, resulting in the model outputting a limited range of results. There are many other factors that affect when mode
-                            collapse occurs, which is why it remains one of the most complex issues in machine learning today.
-                            <br /><br />
-                            Other problems we had included needing to clean and parse
-                            <a id="github" href="https://github.com/googlecreativelab/quickdraw-dataset" target="_blank" style="color: cornflowerblue">
-                                Google's Quick, Draw! dataset
-                            </a> with limited memory and computational resources.
-
-
+                            collapse occurs, which is why it remains one of the most complex issues in machine learning today. Trying to find methods to reduce it was
+                            extremely difficult and led to us exploring different GAN architectures, specifically
+                            <a id="github-spectral" href="https://github.com/IShengFang/SpectralNormalizationKeras" target="_blank" style="color: cornflowerblue">
+                                Spectral Normalization for Keras Dense and Convolution Layers</a>.
                         </h3>
                     </div>
 
@@ -119,7 +120,11 @@
                         </h2>
                     </div>
                     <div class="QA-Answer">
-                        <h3>One of our main takeaways from this experience was learning how to train GANs on large datasets using Google Cloud.</h3>
+                        <h3>
+                            One of our main takeaways from this experience was learning how to train GANs on large datasets using Google Cloud. Despite
+                            time constraints and limited computational resources, we were able to train our network on the full dataset for each of the categories.
+                            This was also the first time we had worked with Tensorflow 2.0.
+                        </h3>
                     </div>
 
                     <div class="QA-Header">
@@ -129,9 +134,9 @@
                     </div>
                     <div class="QA-Answer">
                         <h3>
-                            Due to time constraints and limited computing resources, we were only able to train our network on a small subset of the full dataset.
-                            Additionally, some features we were planning to implement include animating the resulting drawing and possibly running image analysis models to predict
-                            colors based on the word.
+                            We hope to train a Convolutional Recurrent Neural Network (CRNN) to draw the computer-generated images based off time between 
+                            points since we unfortunately did not have time to do so. Another feature we were planning to implement was running a 
+                            form of image analysis to predict colors based on the chosen word to make our doodles colorful.
                         </h3>
                         <br><br><br>
                     </div>
